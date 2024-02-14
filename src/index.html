@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weathe App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          id="searchBox"
+          type="text"
+          placeholder="Enter city name"
+          spellcheck="false"
+        />
+        <button id="searchBtn" >
+          <img src="../images/search.png" />
+        </button>
+        <!-- <p>hello</p> -->
+      </div>
+      <div class="weather">
+        <img src="" class="weather_icon" />
+        <h1 class="temp"></h1>
+        <h2 class="city"></h2>
+        <div class="details">
+          <div class="col">
+            <img src="" class="humidity_icon" />
+            <div>
+              <p class="humidity"></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="" class="wind_icon" />
+            <div>
+              <p class="wind"></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <ul class="daysList">
+            <!-- <li class="days"><p class="daysTemp"></p></li> -->
+            <!-- <li>day 2</li> -->
+            <!-- <li>day 3</li> -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- <script>
+
+const apiKey = "dff276d24f910ecef4552830862887e8";
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=noida";
+
+async function checkWeather(){
+    const response = await fetch(apiUrl + `appid=${apiKey}`)
+    var data = await response;
+
+    console.log(data);
+}
+checkWeather();
+
+</script> -->
+<script src="main.js" type="module"></script>
+
+  </body>
+</html>
